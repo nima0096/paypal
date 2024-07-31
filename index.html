@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PayPal</title>
+    <style>
+      body {
+        padding: 0;
+        margin: o;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #header {
+        height: 88px;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 20px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #header-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      #header-left-navigation {
+        margin-left: 18px;
+        display: flex;
+        gap: 20px;
+      }
+
+      .header-left-navigation-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0px 16px;
+        border-radius: 32px;
+      }
+      .header-left-navigation-item:hover {
+        cursor: pointer;
+        background-color: rgb(190, 255, 255);
+        font-weight: bold;
+      }
+
+      .header-left-navigation-item:hover .arrow {
+        transform: rotate(-135);
+      }
+
+      .arrow {
+        border: solid black;
+        border-width: 0px 3px 3px 0px;
+        display: inline-block;
+        padding: 3px;
+        transition: transform 0.3s;
+      }
+
+      .down {
+        transform: rotate(45deg);
+      }
+
+      #header-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      #header-right-navigation {
+        text-decoration: none;
+        color: black;
+        gap: 40px;
+      }
+
+      #header-left-navigation-item {
+        font: 18px;
+        margin: 0px 0px 0px 9px;
+        padding: 12px 32px;
+        border-radius: 50px;
+        gap: 15px;
+      }
+
+      #button {
+        background-color: #003087;
+        border-radius: 20px;
+        padding: 12px 32px;
+        color: white;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #center {
+        width: 100vw;
+        height: 850.43px;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #center-body {
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        background-color: white;
+      }
+      #center-body-left {
+        color: #0070e0;
+        width: 1100px/2;
+      }
+      #center-body-left h1 {
+        font-size: 56.3042px;
+      }
+      #center-body-left p {
+        font-size: 18px;
+      }
+      #center-body-right {
+        width: 1100px/2;
+      }
+      #center-body-right-img {
+        height: 465.3px;
+        width: 465.3px;
+        border-radius: 20px;
+      }
+
+      #center-body-left-button {
+        background-color: #003087;
+        padding: 7.6px 23.6px;
+        border-radius: 20px;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        width: 100px;
+      }
+
+      #center-body-left-button:hover {
+        cursor: pointer;
+        background-color: #0070e0;
+      }
+      .home-body {
+        height: 40px;
+        background-color: white;
+        border: 2px solid;
+        color: #001c64;
+        padding: 12px 32px;
+        font-size: 15.38px;
+        border-radius: 20px;
+      }
+      .home-body:hover {
+        cursor: pointer;
+        border: 2px solid;
+        color: #0070e0;
+      }
+      #home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        height: 80px;
+        background-color: white;
+        gap: 10px;
+      }
+      #intro {
+        height: 500px;
+        background-color: #001435;
+      }
+      #intro-up h1 {
+        font-size: 54.97px;
+        color: white;
+      }
+      #intro-down {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        text-decoration: none;
+      }
+      .intro-down-box {
+        height: 344px;
+        width: 395.59px;
+        background-color: white;
+        border-radius: 30px;
+        font-size: 38px;
+        color: #001c64;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+      }
+      .intro-down-box a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="header-left">
+        <img
+          width="36"
+          height="36"
+          src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg"
+          alt="paypal logo"
+        />
+        <div id="header-left-navigation">
+          <div class="header-left-navigation-item">
+            <p>Personal</p>
+            <i class="arrow down"></i>
+          </div>
+
+          <div class="header-left-navigation-item">
+            <p>Small Business</p>
+            <i class="arrow down"></i>
+          </div>
+
+          <div class="header-left-navigation-item">
+            <p>Enter Price</p>
+            <i class="arrow down"></i>
+          </div>
+
+          <div class="header-left-navigation-item">
+            <p>Developer</p>
+          </div>
+        </div>
+      </div>
+      <div id="header-right">
+        <a href="" id="header-right-navigation">What's new</a>
+        <a href="" id="header-right-navigation">Help</a>
+        <a href="https://www.paypal.com/signin"
+          ><button
+            style="border: 2px; color: #003087; font-size: 18px"
+            id="header-left-navigation-item"
+          >
+            Log in
+          </button></a
+        >
+        <a href="https://www.paypal.com/us/webapps/mpp/account-selection"
+          ><button
+            style="font-size: 18px; background-color: #003087; color: white"
+            id="header-left-navigation-item"
+          >
+            Sign up
+          </button></a
+        >
+      </div>
+    </div>
+
+    <div id="center">
+      <div id="center-body">
+        <div id="center-body-left">
+          <h1>Join PayPal. Earn a sweet $20 cash back.</h1>
+          <p>
+            Your first 3 purchases of $30 or more with PayPal can earn you $20
+            cash back (2,000 Rewards points).1 To claim this offer, hit the Sign
+            Up button below.
+          </p>
+          <a
+            id="center-body-left-button"
+            href="https://www.paypal.com/US/welcome/flow/signup?product_flow=Introoffer3XO24&flow=eyJyZXR1cm5VcmwiOiIvdXMvd2ViYXBwcy9tcHAvY2FtcGFpZ25zL25uYS9tdWx0aXR4bjI0L2Vucm9sbGVkP3NpZ251cENvbXBsZXRlPXRydWUiLCJjYW5jZWxVcmwiOiIvdXMvd2ViYXBwcy9tcHAvY2FtcGFpZ25zL25uYS9tdWx0aXR4bjI0In0="
+            >Sign up</a
+          >
+
+          <p>
+            Max 160,000 rewards available. Offer ends 30 days from sign up.
+            Check offer for details.<a
+              href="https://www.paypal.com/us/legalhub/pp-rewards-program-tnc"
+              >Terms and exclusions apply</a
+            >
+          </p>
+        </div>
+        <div id="center-body-right">
+          <img
+            id="center-body-right-img"
+            src="./hero_size-tablet-up_v3.webp"
+            alt=" body-right img"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="home">
+      <button class="home-body">Personal</button>
+      <button class="home-body">Business</button>
+    </div>
+    <div id="intro">
+      <div id="intro-up"><h1>With PayPal, it really adds up</h1></div>
+
+      <div id="intro-down">
+        <a href="https://www.paypal.com/us/digital-wallet/rewards">
+          <div class="intro-down-box">
+            Cash back offers on hundreds of brands
+          </div></a
+        >
+        <a
+          href="https://www.paypal.com/us/digital-wallet/manage-money/paypal-cashback-mastercard"
+          ><div class="intro-down-box">
+            Plus, earn up to 3% cash back with the PayPal Cashback Mastercard
+          </div></a
+        >
+        <a
+          href="https://www.paypal.com/us/digital-wallet/manage-money/start-saving"
+          ><div class="intro-down-box">
+            Plus, earn interest on that cash back with PayPal Savings
+          </div></a
+        >
+        <a
+          href="https://www.paypal.com/us/digital-wallet/security-and-protection"
+          ><div class="intro-down-box">Always safe, private, and secure</div></a
+        >
+      </div>
+    </div>
+  </body>
+
+  <div id="group">
+    <div id="up">
+      <h2>Safe private</h2>
+      <p>secure</p>
+    </div>
+    <div id="down"></div>
+  </div>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #body {
+        margin: o;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #header {
+        height: 88px;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 20px 32px;
+        display: flex; 
+
+      }
+      #header-left {
+        display: flex;
+        align-items: center;
+      }
+
+      #header-left-navigation {
+        margin-left: 24px;
+        display: flex;
+        gap: 20px;
+      }
+      .header-left-navigation-item {
+        display: flex;
+        align-items: center;
+        padding: 0ox 16px;
+        border-radius: 32px;
+        gap: 10px;
+      }
+
+      .header-left-navigation-item:hover:hover {
+        cursor: pointer;
+        background-color: rgb(190, 255, 255); 
+        font-weight: bold;
+      }
+      .header-left-navigation-item:hover:hover .arrow {
+        transform: rotate(-135);
+      }
+      .arrow {
+        border: solid black;
+        border-width: 3px 0px 0px 3px;
+        display: inline-block;
+        padding: 3px;
+        transition: transform 0.3s;
+      }
+      .down {transform: rotate(45deg);}
+      #header-right {display: flex; flex-direction: row; align-items: center;}
+      #header-right-navigation {display: flex; gap: 20px; margin-left: 18px;  text-decoration: none;}
+      #header-right-navigation a {font-size: 18px; border-radius: 20px; border: 2px solid; color: white; background-color: #003087; padding: 12px 32px; margin: 0px 0px 0px 9px;}
+      #center {
+        width: 100vw;
+        height: 850.43px;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #center-body {
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        background-color: white;
+      }
+      #center-body-left {
+        color: #0070e0;
+        width: 1100px/2;
+      }
+      #center-body-left h1 {
+        font-size: 56.3042px;
+      }
+      #center-body-left p {
+        font-size: 18px;
+      }
+      #center-body-right {
+        width: 1100px/2;
+      }
+      #center-body-right-img {
+        height: 465.3px;
+        width: 465.3px;
+        border-radius: 20px;
+      }
+      #center-body-left-button {
+        background-color: #003087;
+        padding: 7.6px 23.6px;
+        border-radius: 20px;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        width: 100px;
+      }
+
+      #center-body-left-button:hover {
+        cursor: pointer;
+        background-color: #0070e0;
+      }
+      #intro {
+        height: 500px;
+        background-color: #001435;
+      }
+      #intro-ip {display: flex; justify-content: center; align-items: center;}
+      #intro-up h1 {
+        font-size: 54.97px;
+        color: white;
+      }
+      #intro-down {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        text-decoration: none;
+      }
+      .intro-down-box {
+        height: 344px;
+        width: 395.59px;
+        background-color: white;
+        border-radius: 30px;
+        font-size: 38px;
+        color: #001c64;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+      }
+      .intro-down-box a {
+        text-decoration: none;
+      }
+      #group {width: 100vw; height: 850.43px; background-color: white; margin-top: 50px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+      #group-up h2 {font-size: 36.8px; display: flex;}
+      #group_up p {font-size: 16px; display: flex;}
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="header-left">
+        <img
+          style="height: 36px; width: 36px"
+          src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg"
+          alt="paypal logo"
+        />
+      </div>
+      <div id="header-left-navigation">
+        <div class="header-left-navigation-item">
+          <p>Personal</p>
+          <i class="arrow down"></i>
+        </div>
+        <div class="header-left-navigation-item">
+          <p>Small Business</p>
+          <i class="arrow down"></i>
+        </div>
+        <div class="header-left-navigation-item">
+          <p>Enter Price</p>
+          <i class="arrow down"></i>
+        </div>
+        <div class="header-left-navigation-item">
+          <p>Developer</p>
+        </div>
+        <div id="header-right">
+          <p id="header-right-navigation">What's new</p>
+          <p id="header-right-navigation">Help</p>
+          <a
+            style="
+              ont-size: 18px;
+              border-radius: 20px;
+              border: 2px solid;
+              color: white;
+              background-color: #003087;
+              padding: 12px 32px;
+              margin: 0px 0px 0px 9px;
+            "
+            id="header-right-navigation"
+            href=""
+            ><button>Log In</button></a
+          >
+          <a id="header-right-navigation" href=""><button>Sign up</button></a>
+        </div>
+      </div>
+    </div>
+    <div id="center">
+      <div id="center-body">
+        <div id="center-body-left">
+          <h1>Join PayPal. Earn a sweet $20 cash back.</h1>
+          <p>
+            Your first 3 purchases of $30 or more with PayPal can earn you $20
+            cash back (2,000 Rewards points).1 To claim this offer, hit the Sign
+            Up button below.
+          </p>
+          <a
+            id="center-body-left-button"
+            href="https://www.paypal.com/US/welcome/flow/signup?product_flow=Introoffer3XO24&flow=eyJyZXR1cm5VcmwiOiIvdXMvd2ViYXBwcy9tcHAvY2FtcGFpZ25zL25uYS9tdWx0aXR4bjI0L2Vucm9sbGVkP3NpZ251cENvbXBsZXRlPXRydWUiLCJjYW5jZWxVcmwiOiIvdXMvd2ViYXBwcy9tcHAvY2FtcGFpZ25zL25uYS9tdWx0aXR4bjI0In0="
+            >Sign up</a
+          >
+
+          <p>
+            Max 160,000 rewards available. Offer ends 30 days from sign up.
+            Check offer for details.<a
+              href="https://www.paypal.com/us/legalhub/pp-rewards-program-tnc"
+              >Terms and exclusions apply</a
+            >
+          </p>
+        </div>
+        <div id="center-body-right">
+          <img
+            id="center-body-right-img"
+            src="./LEAP/lesson1/homepage-component-hero-size-all.webp"
+            alt=" body-right img"
+          />
+        </div>
+      </div>
+      
+    </div>
+    <div id="intro">
+        <div id="intro-up"><h1>With PayPal, it really adds up</h1></div>
+  
+        <div id="intro-down">
+          <a href="https://www.paypal.com/us/digital-wallet/rewards">
+            <div class="intro-down-box">
+              Cash back offers on hundreds of brands
+            </div></a
+          >
+          <a
+            href="https://www.paypal.com/us/digital-wallet/manage-money/paypal-cashback-mastercard"
+            ><div class="intro-down-box">
+              Plus, earn up to 3% cash back with the PayPal Cashback Mastercard
+            </div></a
+          >
+          <a
+            href="https://www.paypal.com/us/digital-wallet/manage-money/start-saving"
+            ><div class="intro-down-box">
+              Plus, earn interest on that cash back with PayPal Savings
+            </div></a
+          >
+          <a
+            href="https://www.paypal.com/us/digital-wallet/security-and-protection"
+            ><div class="intro-down-box">Always safe, private, and secure</div></a
+          >
+        </div>
+        <div id="group">
+            <div id="group-up">
+                <h2>Safe, private, secure</h2>
+                <p>Your data is encrypted, keeping your sensitive financial info safe.</p>
+                <a href=""><button style="border-radius: 20px; background-color: #003087; padding: 20px 30px; color: white; font-size: 20px;">More about security</button></a>
+            </div>
+
+
+            <div id="group-down"><img style="border-radius: 30px; width: 1000px; height: 400px; display: flex; justify-content: center; align-items: center; margin-top: 30px;" src="./LEAP/lesson1/chapte3-security-size=desktop.webp" alt="commertial imgh"></div>
+        </div>
+  </body>
+</html>
